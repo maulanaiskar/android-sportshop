@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Sport Shop</string>
+    <string name="about_name">About</string>
+    <string name="item_name">Nama Item</string>
+    <string name="detail">Detail</string>
+    <string name="about">About</string>
+    <string name="beli">Buy</string>
+    <string name="email">lanaiskar@gmail.com</string>
+    <string name="nama">Iskar Maulana</string>
+</resources>

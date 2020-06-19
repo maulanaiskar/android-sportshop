@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/img_item_photo"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        android:scaleType="fitXY"
+        tools:src="@color/colorAccent"></ImageView>
+
+    <TextView
+        android:id="@+id/tv_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toEndOf="@+id/img_item_photo"
+        android:layout_toRightOf="@+id/img_item_photo"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="Nama">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_item_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_item_name"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toRightOf="@id/img_item_photo"
+        tools:text="Harga"
+        android:textSize="20sp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/warna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_item_price"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toRightOf="@id/img_item_photo"
+        tools:text="Warna"
+        android:text="Pilihan Warna"
+        android:textSize="20sp"
+        android:textStyle="bold">
+    </TextView>
+
+    <Button
+        android:id="@+id/black"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_below="@id/warna"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@id/img_item_photo"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white">
+    </Button>
+
+    <TextView
+        android:id="@+id/blue"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_below="@id/warna"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toRightOf="@id/img_item_photo"
+        android:background="@android:color/holo_blue_dark">
+    </TextView>
+
+    <TextView
+        android:id="@+id/red"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_below="@id/warna"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@id/img_item_photo"
+        android:background="@android:color/holo_red_dark">
+    </TextView>
+
+    <Button
+        android:id="@+id/btn_set_favorite"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:layout_below="@id/blue"
+        android:layout_toRightOf="@id/img_item_photo"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Favorit"
+        android:textSize="12sp">
+    </Button>
+
+    <Button
+        android:id="@+id/btn_set_buy"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/blue"
+        android:layout_toRightOf="@id/img_item_photo"
+        android:layout_marginLeft="115dp"
+        android:layout_marginRight="15dp"
+        android:text="Beli"
+        android:textSize="12sp">
+    </Button>
+
+    <LinearLayout
+        android:layout_width="376dp"
+        android:layout_height="392dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi Produk"
+            android:textSize="20sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_item_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="textStart"
+            android:ellipsize="end"
+            android:textSize="15sp"
+            tools:text="Detail">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Ulasan"
+            android:textSize="20sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_item_ulasan"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="textStart"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:textSize="15sp"
+            tools:text="Ulasan">
+        </TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>
